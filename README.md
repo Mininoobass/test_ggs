@@ -91,6 +91,12 @@ grep -E -o "^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}" 403err.txt | sort -n |
 
 - Task with * . Write script to show which pages Google checked from the website 
 
+```console
+vim script.sh
+#!/bin/bash
+grep google[A-Za-Z/.0-9]* test.txt | grep -E -o "^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}"
+```
+
 ## Replace
 
 Replace IP address with most requests on 127.0.0.1 in test.txt file 
