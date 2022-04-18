@@ -84,6 +84,10 @@ grep -E -o "^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}" testpost.txt | sort -n
 
 -  Which IP addresses received 403 error ? 
 
+```console
+grep 403 test.txt > 403err.txt
+grep -E -o "^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}" 403err.txt | sort -n | uniq  | sort -n 
+```
 
 - Task with * . Write script to show which pages Google checked from the website 
 
