@@ -76,6 +76,11 @@ grep -E -o "^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}" test.txt | sort -n | u
 
 -  Top 3 IP addresses by amount of POST requests.
 
+```console
+grep -E post test.txt > testpost.txt
+
+grep -E -o "^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}" testpost.txt | sort -n | uniq -c | sort -n | tail -n 3
+```
 
 -  Which IP addresses received 403 error ? 
 
