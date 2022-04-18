@@ -8,11 +8,15 @@ mkdir test
 
 - Create file test1.txt inside the test1 directory.
 
-
+touch test1.txt
 
 -   Create copy of folder test1 with name test2.  
 
+cp -r /home/mininoobass/Desktop/GIT/test_ggs/test1 test2
+
 -    Delete file test1.txt inside test2 directory.
+
+rm test1.txt
 
 -    Rename test2 folder into directory_without_file
 
