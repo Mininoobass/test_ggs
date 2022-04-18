@@ -1,2 +1,2 @@
 #!/bin/bash
-grep google[A-Za-Z/.0-9]* $1
+grep google[A-Za-Z/.0-9]* $1 | grep -E -o "^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}"
