@@ -8,17 +8,25 @@ mkdir test
 
 - Create file test1.txt inside the test1 directory.
 
+```console
 touch test1.txt
+```
 
 -   Create copy of folder test1 with name test2.  
 
+```console
 cp -r /home/mininoobass/Desktop/GIT/test_ggs/test1 test2
+```
 
 -    Delete file test1.txt inside test2 directory.
 
+```console
 rm test1.txt
+```
 
 -    Rename test2 folder into directory_without_file
+
+
 
 -    Insert 'test1' text into test1/test1.txt file.
 
@@ -44,15 +52,27 @@ rm test1.txt
 
 -  Count lines in the file test.txt.
 
+```console
+wc -l test.txt
+```
 
 - Show last 3 lines from the test.txt file. 
 
+```console
+tail -n 3 test.txt
+```
 
 -  Hom many uniq IP addresses accessed the website ? 
 
+```console
+grep -E -o "^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}" test.txt | sort -n | uniq -c | wc -l
+```
 
 -  IP address with most requests.
 
+```console
+grep -E -o "^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}" test.txt | sort -n | uniq -c | sort -n | tail -n 1
+```
 
 -  Top 3 IP addresses by amount of POST requests.
 
